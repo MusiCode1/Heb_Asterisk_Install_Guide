@@ -15,3 +15,15 @@ The first online guide to installing Asterisk and FreePBX in Hebrew!
 ```
 sudo apt -y install git curl wget libnewt-dev libssl-dev libncurses5-dev subversion  libsqlite3-dev build-essential libjansson-dev libxml2-dev  uuid-dev
 ```
+
+אם מתקבלת הודעת שגיאה על חבילת subversion, כזאת:
+```
+E: Package 'subversion' has no installation candidate
+```
+
+צריך להוסיף את המקור שלה למאגר. כך:
+```
+sudo add-apt-repository universe
+sudo apt update && sudo apt -y install subversion
+```
+(מקור: https://computingforgeeks.com/how-to-install-asterisk-16-lts-on-ubuntu-18-04-16-04-debian-9/)
