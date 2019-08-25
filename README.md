@@ -41,3 +41,28 @@ sudo apt update && sudo apt -y install subversion
 ```bash 
 cd /usr/src/
 ```
+
+נוריד את אסטריסק:
+```bash
+sudo wget http://downloads.asterisk.org/pub/telephony/asterisk/asterisk-16-current.tar.gz
+```
+
+כשתסתיים ההורדה נחלץ את הקובץ:
+```bash
+sudo tar zxf asterisk-16-current.tar.gz
+```
+
+לאחר החילוץ נכנס לתיקייה:
+```bash
+cd asterisk-16.*/
+```
+
+> הכוכבית באה כדי לפתוח את התיקייה, למרות שאנו לא יודעים את השם המלא שלה (זה אמור להיות משהו כמו asterisk-16.0.5).
+
+### התקנת תלות – מקודד mp3
+נתקין את המקודד של mp3:
+```bash
+sudo contrib/scripts/get_mp3_source.sh
+```
+> אשמח למי שיסביר לי למה זה טוב.
+> אי אפשר להשתמש בקבצי mp3 בלי זה?
