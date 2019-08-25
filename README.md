@@ -1,10 +1,6 @@
 # Heb_Asterisk_Install_Guide
 The first online guide to installing Asterisk and FreePBX in Hebrew!
-<div dir="rtl" style="
-pre {
-  dir: ltr;
-}
-" >
+<div dir="rtl" text-align="right">
 שימו לב:
 בקובץ זה, לא נתתי דגש על לעשות את הדברים מהר, אלא להבין כל פקודה, כמה שאפשר, מה היא מבצעת.
 בהרבה מקרים ניתן לבצע את הפעולות מהר יותר.
@@ -22,7 +18,7 @@ sudo apt -y install git curl wget libnewt-dev libssl-dev libncurses5-dev subvers
 ```
 
 אם מתקבלת הודעת שגיאה על חבילת subversion, כזאת:
-```bash {:custom-id}
+```bash
 E: Package 'subversion' has no installation candidate
 ```
 
@@ -66,3 +62,21 @@ sudo contrib/scripts/get_mp3_source.sh
 ```
 > אשמח למי שיסביר לי למה זה טוב.
 > אי אפשר להשתמש בקבצי mp3 בלי זה?
+
+### בדיקת תלויות חסרות
+כעת נריץ סקריפט שבודק האם כל התלויות של אסטריסק נמצאות, ומתקין את החסרות:
+```bash
+sudo contrib/scripts/install_prereq install
+```
+
+(אפשר להריץ את הסקריפט הזה גם לבדיקה בלבד, ללא התקנה של התלויות החסרות, על ידי החלפת הפרמטר install ב test.)
+אם תשאל על האיזור שלך (tzdata) בחר אסיה, ואחר כך ירושלים.
+אם תשאל על איזור החיוג שלך (וברירת המחדל היא 61 - אוסטרליה) הקש 972 - ישראל.
+
+לבסוף אמורים לקבל תוצאה כזו:
+```
+#############################################
+## install completed successfully
+#############################################
+```
+
