@@ -12,20 +12,28 @@ The first online guide to installing Asterisk and FreePBX in Hebrew!
 ### התקנת תלויות
 
 נתקין את כל החבילות שאסטריסק צריכה לפעולה תקינה:
-<div dir="ltr">
 
-```
+```bash
 sudo apt -y install git curl wget libnewt-dev libssl-dev libncurses5-dev subversion  libsqlite3-dev build-essential libjansson-dev libxml2-dev  uuid-dev
 ```
-<div dir="rtl">
+
 אם מתקבלת הודעת שגיאה על חבילת subversion, כזאת:
-```
+```bash
 E: Package 'subversion' has no installation candidate
 ```
 
 צריך להוסיף את המקור שלה למאגר. כך:
-```
+```bash
 sudo add-apt-repository universe
 sudo apt update && sudo apt -y install subversion
 ```
 (מקור: https://computingforgeeks.com/how-to-install-asterisk-16-lts-on-ubuntu-18-04-16-04-debian-9/)
+
+### הורדת הגרסה האחרונה
+קודם נוריד את הגרסה האחרונה (עם תמיכה לטווח ארוך - TLS) של אסטריסק:
+> הגרסה האחרונה נכון לעכשיו היא 16.
+
+נדפדף לתיקיית scr:
+```bash
+cd /usr/src/
+```
