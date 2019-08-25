@@ -12,6 +12,7 @@ The first online guide to installing Asterisk and FreePBX in Hebrew!
 ### התקנת תלויות
 
 נתקין את כל החבילות שאסטריסק צריכה לפעולה תקינה:
+<div dir="ltr">
 ```
 sudo apt -y install git curl wget libnewt-dev libssl-dev libncurses5-dev subversion  libsqlite3-dev build-essential libjansson-dev libxml2-dev  uuid-dev
 ```
