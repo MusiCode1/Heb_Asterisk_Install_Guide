@@ -22,7 +22,7 @@ sudo apt -y install git curl wget libnewt-dev libssl-dev libncurses5-dev subvers
 ```
 
 אם מתקבלת הודעת שגיאה על חבילת subversion, כזאת:
-```bash {#custom-id}
+```bash {:custom-id}
 E: Package 'subversion' has no installation candidate
 ```
 
