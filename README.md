@@ -13,10 +13,11 @@ The first online guide to installing Asterisk and FreePBX in Hebrew!
 
 נתקין את כל החבילות שאסטריסק צריכה לפעולה תקינה:
 <div dir="ltr">
+
 ```
 sudo apt -y install git curl wget libnewt-dev libssl-dev libncurses5-dev subversion  libsqlite3-dev build-essential libjansson-dev libxml2-dev  uuid-dev
 ```
-
+<div dir="rtl">
 אם מתקבלת הודעת שגיאה על חבילת subversion, כזאת:
 ```
 E: Package 'subversion' has no installation candidate
