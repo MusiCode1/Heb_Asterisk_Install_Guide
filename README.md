@@ -1,6 +1,10 @@
 # Heb_Asterisk_Install_Guide
 The first online guide to installing Asterisk and FreePBX in Hebrew!
-<div dir="rtl">
+<div dir="rtl" style="
+pre {
+  dir: ltr;
+}
+" >
 שימו לב:
 בקובץ זה, לא נתתי דגש על לעשות את הדברים מהר, אלא להבין כל פקודה, כמה שאפשר, מה היא מבצעת.
 בהרבה מקרים ניתן לבצע את הפעולות מהר יותר.
@@ -18,7 +22,7 @@ sudo apt -y install git curl wget libnewt-dev libssl-dev libncurses5-dev subvers
 ```
 
 אם מתקבלת הודעת שגיאה על חבילת subversion, כזאת:
-```bash
+```bash {#custom-id}
 E: Package 'subversion' has no installation candidate
 ```
 
@@ -34,6 +38,6 @@ sudo apt update && sudo apt -y install subversion
 > הגרסה האחרונה נכון לעכשיו היא 16.
 
 נדפדף לתיקיית scr:
-```bash
+```bash 
 cd /usr/src/
 ```
