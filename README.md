@@ -6,5 +6,3 @@ The first online guide to installing Asterisk and FreePBX in Hebrew!
 בהרבה מקרים ניתן לבצע את הפעולות מהר יותר.
 
 # מדריך התקנת מרכזיית אסטריסק מקבצי המקור
-
-</ div>
