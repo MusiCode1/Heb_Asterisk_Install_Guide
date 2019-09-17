@@ -30,6 +30,7 @@ E: Package 'subversion' has no installation candidate
 
 <div dir="rtl" text-align="right">
 צריך להוסיף את המקור שלה למאגר. כך:
+  
 ```bash
 sudo add-apt-repository universe
 sudo apt update && sudo apt -y install subversion
