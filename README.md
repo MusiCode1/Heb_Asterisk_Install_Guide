@@ -21,10 +21,14 @@ sudo apt -y install git curl wget libnewt-dev libssl-dev libncurses5-dev subvers
 
 <div dir="rtl" text-align="right">
 אם מתקבלת הודעת שגיאה על חבילת subversion, כזאת:
+  
+<div dir="ltr" text-align="left">
+  
 ```bash
 E: Package 'subversion' has no installation candidate
 ```
 
+<div dir="rtl" text-align="right">
 צריך להוסיף את המקור שלה למאגר. כך:
 ```bash
 sudo add-apt-repository universe
